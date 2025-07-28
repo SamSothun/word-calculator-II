@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="myself.jpg" />
+    <title>កិច្ចការស្រាវជ្រាវផ្ទាល់ខ្លួន (ឆមាសទី២)</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Headers -->
+    <div class="sticky-header">
+      <div class="header-left">
+        <img src="cv03.jpg" alt="User Avatar" />
+        <span>Sam Sothun E2</span>
+      </div>
+    </div>
+
+    <section>
+      <h2>WORD CALCULATOR</h2>
+      <div>
+        <label
+          >Enter the amount in Khmer Riel to view the value in words (Khmer &
+          English) and its converted USD amount (based on 1 USD = 4000៛ as
+          default).</label
+        >
+        <br />
+        <h1>Exchange RIEL to USD</h1>
+        <input
+          type="number"
+          id="custom_exchange_rate"
+          placeholder="Custom Exchange Rate"
+          oninput="convertAmountAsCustomExchangeRate()"
+        />
+      
+        <input
+          type="number"
+          id="number"
+          placeholder="(Max: 999,999,999)"
+          oninput="convertNumber()"
+        />
+
+        <p class="result" id="englishResult"></p>
+        <p class="result" id="khmerResult"></p>
+        <p class="result" id="usdValue"></p>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
